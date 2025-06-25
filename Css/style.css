@@ -111,7 +111,7 @@ ul {
 
 body {
     background: url(../IMG/bg-mobile.jpg) no-repeat top center/cover; /*Define a imaagem de fundo e ajusta sua posição e tamanho*/
-    height: 100vh; /*Define a altura do corpo como 100% da altura da janela de visualição */
+    height: 150vh; /*Define a altura do corpo como 100% da altura da janela de visualição */
 }
 
 body * {
@@ -293,7 +293,7 @@ footer {
     }
 
     .light body {
-        background: url(../IMG/bg-desktop-light.jpg) no-repeat top center/cover; /* Altera o fundo do corpo para desktop no modo claro*/
+        background: url(../IMG/bg-mobile-light.jpg) no-repeat top center/cover; /* Altera o fundo do corpo para desktop no modo claro*/
     }
 }
 
