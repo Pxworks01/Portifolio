@@ -1,0 +1,320 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url() no-repeat top center/cover;
+    height: 100vh;
+}
+
+body* {
+    color: white;
+
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+#container {
+    width: 100%;
+    max-width: 588px;
+    margin: 56px;
+    padding: 0 24px;
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+
+}
+
+#profile img {
+    width: 112px;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+
+}
+
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white url()no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-back 0.2s;
+}
+
+.light #switch button{
+     
+    animation: side-in 0.2s forwards;
+    background: white url();
+
+}
+
+#switch button:hover{
+    outline: 8px solid rgba(255, 255, 255, 0.2);
+
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+
+}
+
+.light #switch span{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+*/
+
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define o box model para incluir bordas e preenchimento no tamanho total*/
+}
+/* Modo escuro padrão*/
+
+body {
+    background: url(../IMG/bg-mobile.jpg) no-repeat top center/cover; /*Define a imaagem de fundo e ajusta sua posição e tamanho*/
+    height: 100vh; /*Define a altura do corpo como 100% da altura da janela de visualição */
+}
+
+body * {
+    color: white; /*Define a cor do texto de todos os elementos filhos como branco*/
+}
+
+p {
+    font-family: "Inter", sans-serif; /*Aplica a fonte 'Inter' aos paragrafos*/
+}
+
+a {
+    text-decoration: none; /*Remove o sublinhado padrão dos links*/
+}
+
+#container {
+    width: 100%; /*Faz o coitainer ocupar 100% da largura disponivel*/
+    max-width: 588px; /*Define uma largura maxima para container*/
+    margin: 56px auto 0px; /*Centraliza o container horizontal dentro do container*/
+    padding: 0 24px; /* Adiciona preenchimento horizontal dentro do conntainer*/
+}
+
+/*profile*/
+#profile {
+    text-align: center; /*Centraliza o conteudo do perfil*/
+    padding: 24px; /*Adiciona  preenchimento interno*/
+}
+
+#profile img {
+    width: 250px; /*Define a  largura da imagem do perfil*/
+}
+
+#profile p {
+    font-weight: 500; /* Define o peso da fonte como medio*/
+    line-height: 24px; /* Define a altura da linha*/
+    margin-top: 8px; /* Adiciona espaçamento acima do texto do perfil*/
+}
+
+/* Switch */
+
+#switch {
+    position: relative; /*Define a posiçao relativa para posicionar elementos filhos*/
+    width: 64px; /* Define a largura do switch */
+    margin: 4px auto; /* Centraliza o switch horizontamente*/
+}
+
+#switch button {
+    width: 32px; /* Define a largura do botão*/
+    height: 32px; /* Define a altura do botão */
+    background: white url(../Css/moon-stars.svg) no-repeat center; /* Define a cor de fundo do botão*/
+    border: 0; /* Remove a borda padrão do botão*/
+    border-radius: 50%; /* Faz o botão circular*/
+    position: absolute; /* Permite posicionar o botão dentro do switch */
+    top: 50%; /* Posiciona o botão no meio vertical do switch */
+    left: 0; /* Alinha o botão á esquerda do switch */
+    z-index: 1; /* Garante que o botão esteja acima de outros elementos */
+    transform: translateY(-50%); /* Ajusta o botão para ficar perfeitamente centralizado verticalmente */
+    animation: slide-back 0.2s; /* Adiciona uma animação para o botão */
+}
+
+.light #switch button {
+    animation: slide-in 0.2s forwards; /* Adiciona uma animação para o botão de modo claro */
+    background: white url(../Css/sun.svg) no-repeat center; /* Altera o icone de fundo para um sol no modo claro */
+}
+
+#switch button:hover {
+    outline: 8px solid rgba(255, 255, 255, 0.2); /* Adiciona um contorno ao botão ao passar o mouse*/
+}
+
+#switch span {
+    display: block; /* Faz o elemento span ocupar uma linha inteira */
+    width: 64px; /* Define a largura do span */
+    height: 24px; /* Define a altura do span*/
+    background: rgba(255, 255, 255, 0.05); /* Define a cor de fundo translúcida */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Adiciona uma boorda com opacidade */
+    backdrop-filter: blur(4px); /* Adiciona um efeito de desfoque ao fundo */
+    -webkit-backdrop-filter: blur(4px); /* Compatibilidade com navegadores baseados em WebKit */
+    border-radius: 9999px; /* Faz o span ser completamente oval */
+}
+
+.light #switch span {
+    background: rgba(0, 0, 0, 0.05); /* Altera a cor de fundno no modo claro */
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Altera a cor da borda no modo claro*/ 
+}
+
+/* Links */
+
+ul {
+    list-style: none; /* Remove os marcadores de lista dos itens*/
+    display: flex; /*  Usa o layout flexbox para os itens da lista */
+    flex-direction: column; /* Organiza os itens da lista em coluna */
+    gap: 16px; /* Adiciona espaçamento de 16px entre os itens*/
+    padding: 24px 0; /* Adiciona preenchimento acima e abaixo da lista */
+}
+
+ul li a {
+    display: flex; /* Usa o layout flexbox para o link */
+    align-items: center; /* Alinha os itens do link verticalmente ao centro */
+    justify-content: center; /* Alinha os itens do link horizontamente ao centro */
+    color: white; /* Define a cor do texto do link como branca */
+    padding: 16px 24px; /* Adiciona prennchimentos dentro dos links */
+    background: rgba(255, 255, 255, 0.05); /* Define um fundo translucido para o link */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Adiciona uma bprda com opacidade*/
+    border-radius: 8px; /* Arredonda os cantos do link */
+    backdrop-filter: blur(4px); /* Aplica um efeito de desfoque ao fundo do link */
+    -webkit-backdrop-filter: blur(4px); /* Compatibilidade com navegadores baseados em WebKit */
+    text-decoration: none; /* Remove a decoraçao padrao de sublinhado dos links */
+    font-weight: 500; /* Define o peso da fonte do link*/
+    transition: background 0.2s ; /* Define uma transição suave para a mudança de cor de fundo */
+}
+
+ul li a:hover {
+    background: rgba(0, 0, 0, 0.02); /* Altera a cor de fundo ao passar o mouse*/
+    border: 1.5px solid white; /* Aumenta a espessura da borda e muda a cor para branco*/
+}
+
+.light ul li a {
+    background: rgba(0, 0, 0, 0.05); /* Altera o fundo do link no modo claro*/
+    border: 1px solid rgba(0, 0, 0, 0.05) ; /* Altera a borda do link no modo claro*/
+} 
+
+.light ul li a:hover {
+    background: rgba(0, 0, 0, 0.02); /* Altera a cor de fundo ao passar o mouse no modo claro */
+    border: 1.5px solid black; /* Altera a cor da borda ao passar o mouse no modo claro*/
+}
+
+/* Social links*/
+#social-links {
+    display: flex; /* Usa o layout flexbox para os links sociais*/
+    justify-content: center; /* Centraliza os links sociais horizontalmente*/
+    padding: 24px 0; /* Adiociona preenchimento acima e abaixo dos links sociais */
+    font-size: 24px; /* Define o tamanho da fonte para os icones sociais */
+}
+
+#social-links a {
+    color: white; /* Define a cor dos icones sociais como branca*/
+    display: flex; /* Usa o layout flexbox para os icones sociais */
+    align-items: center; /* Alinha os icones sociais verticalmente ao centro*/
+    justify-content: center; /* Alinha os icones sociais horizontamente ao centro*/
+    padding: 16px; /* Adiciona preenchimento dentro dos links sociais*/
+    transition: background 0.2s; /* Define uma transiçao suave para a mudança de cor de fundo*/
+    border-radius: 50%; /* Torna os icones sociais circulares */ 
+}
+
+#social-links a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Altera a cor de fundo ao passar o mouse*/
+}
+
+.light #social-links a:hover {
+    background: rgba(0, 0, 0, 0.1); /* Altera a cor de fundo no modo  claro ao passar o mouse*/
+}
+
+footer {
+    padding: 24px 0; /*Adiciona preenchimento acima e abaixo do rodape*/
+    text-align: center; /* Centraliza o conteudo do rodape*/
+    font-size: 14px; /* Define o tamanho da fonte do rodape*/
+    color: violet;
+}
+ 
+.profile-foto {
+    border-radius: 50%; /* Torna a foto de perfil circular*/
+    border: 3px solid purple; /* Define a borda da foto de perfil com a cor laranja*/
+    width: 350px;
+
+}
+
+.light .profile-foto {
+    border: 3px solid purple; /* Altera a cor da borda da foto de perfil para roxo*/
+}
+
+/* Estilo para modo claro*/
+.light a, .light p, .light ion-icon {
+    color: black; /* Altera a cor do texto dos links, paragrafos e icones para preto no mpodo claro*/
+}
+
+/* media queries - PARA RESPONSIVIDADE */
+@media (min-width: 700px) {
+    body {
+        background: url(../IMG/bg-desktop.jpg) no-repeat top center/cover; /* Altera o fundo do corpo para desktop em telas maiores */
+    }
+
+    .light body {
+        background: url(../IMG/bg-desktop-light.jpg) no-repeat top center/cover; /* Altera o fundo do corpo para desktop no modo claro*/
+    }
+}
+
+/* Animation */
+@keyframes slide-in {
+    from {
+        left: 0; /* Define a popsição inicial do botão no slide-in */
+    }
+
+    to {
+        left: 50%; /* Define a posiçao final do botão no slide-in*/
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%; /* Define a posiçao inicial do botão no slide-back*/
+    }
+
+    to {
+        left: 0; /* Define a posição final do botão no slide-back*/
+    }
+}
+
